@@ -7,23 +7,67 @@
     height: 70px;
 }
 
-.debug header .container{
+.debug header .container, .debug main .container{
     background-color: orange;
+}
+
+.debug main{
+    background-color: aqua;
+    height: 1000px;
+}
+
+.debug main .container{
+    height: 1000px;
+}
+
+.debug .row{
+    background-color: blueviolet;
+    height: 450px;
+    border: 2px solid red;
+}
+
+.debug .col-4{
+    background-color: yellow;
+    height: 350px;
+    border: 2px solid red;
+    
 }
 
 
 
-
-
 /* Common */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .container{
     width: 80%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+}
+
+main .container{
+    flex-direction: column;
+
+}
+
+.row{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex{
     display: flex;
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+    justify-content: center;
+    align-items: center;
 }
