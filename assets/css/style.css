@@ -2,12 +2,14 @@
 
 /* Debug */
 
-.debug header{
+.debug header, .debug footer{
     background-color: blue;
     height: 70px;
 }
 
-.debug header .container, .debug main .container{
+.debug header .container, 
+.debug main .container,
+.debug footer .container{
     background-color: orange;
 }
 
@@ -46,11 +48,12 @@
 .container{
     width: 80%;
     margin: auto;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
-
+header .container, footer .container{
+    justify-content: space-between;
+}
 main .container{
     flex-direction: column;
 
