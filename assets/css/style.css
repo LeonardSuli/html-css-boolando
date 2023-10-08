@@ -70,6 +70,7 @@ header .container, footer .container{
 header{
     background-color: rgb(255, 105, 0);
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 
@@ -98,18 +99,72 @@ a{
 
 main .container{
     flex-direction: column;
+    margin: 2rem;
+    margin: 50px auto;
 }
 
 .row{
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
+    border: 2px solid red;
+    background-color: aqua;
 }
 
 
 .col-4{
-    width: calc((100% / 12) * 4);
-    justify-content: center;
+    width: calc((100% / 12) * 4 - 20px);
+    justify-content: scenter;
     align-items: center;
+    border: 2px solid blue;
+    position: relative;
 }
 
+.col-4 img{
+    width: 100%;
+}
+
+.heart{
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 24px;
+    padding: 5px 10px;
+}
+
+.discount{
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 75%;
+    font-size: 12px;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.sustainability{
+    background-color: green;
+    color: white;
+    position: absolute;
+    left: 45px;
+    top: 75%;
+    font-size: 12px;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.special{
+    left: 0;
+}
+
+.new-price{
+    color: red;
+    font-weight: 700;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
