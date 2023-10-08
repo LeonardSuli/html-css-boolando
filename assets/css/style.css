@@ -100,7 +100,7 @@ a{
 main .container{
     flex-direction: column;
     margin: 2rem;
-    margin: 50px auto;
+    margin: 50px auto 0;
 }
 
 .row{
@@ -108,8 +108,6 @@ main .container{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
-    border: 2px solid red;
-    background-color: aqua;
 }
 
 
@@ -117,7 +115,6 @@ main .container{
     width: calc((100% / 12) * 4 - 20px);
     justify-content: scenter;
     align-items: center;
-    border: 2px solid blue;
     position: relative;
 }
 
@@ -167,4 +164,23 @@ main .container{
 
 .old-price{
     text-decoration: line-through;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+footer ul li{
+    padding-top: 1rem;
+    padding-right: 0.8rem;
+    font-size: 14px;
+}
+
+.social i{
+    padding-top: 0.5rem;
+    font-size: 20px;
 }
