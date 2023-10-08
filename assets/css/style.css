@@ -179,6 +179,10 @@ main .container{
     display: block;
 }
 
+.heart:hover{
+    color: red;
+}
+
 
 /* Footer */
 
